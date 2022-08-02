@@ -1,0 +1,38 @@
+@import "variables";
+@import "condicionales";
+@import "bucles";
+@import "maps";
+@import "extend";
+@import "mixin";
+
+
+header {
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        color:$color-primario;
+    }
+
+    nav {
+        background-color: antiquewhite;
+
+        li {
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin: 10px;
+
+                &:hover {
+                    background-color: white;
+                }
+            }
+        }
+    }
+
+}
